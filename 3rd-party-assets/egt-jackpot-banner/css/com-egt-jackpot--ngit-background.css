@@ -1,0 +1,172 @@
+.com-egt-jackpot-html-jackpotBanner-container {
+    width: 1px;
+    min-width: 100%;
+    padding-top: 165px;
+    -webkit-animation: appear 1.7s ease-in-out forwards;
+            animation: appear 1.7s ease-in-out forwards;
+    height: 100vh; /* popuni container */
+}
+
+.egt-jackpot-game-name {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    height: 100px;
+    width: 95vw;
+    -webkit-animation: moveSmGameName 1.3s ease-in-out forwards;
+            animation: moveSmGameName 1.3s ease-in-out forwards;
+}
+
+.egt-jackpot-left,
+.egt-jackpot-right {
+    visibility: hidden;
+    display: none;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    bottom: 0;
+}
+
+.egt-jackpot-left {
+    -webkit-animation: moveMdLgLeft 1.3s ease-in-out forwards;
+            animation: moveMdLgLeft 1.3s ease-in-out forwards;
+}
+
+.egt-jackpot-right {
+    -webkit-animation: moveMdLgRight 1.3s ease-in-out forwards;
+            animation: moveMdLgRight 1.3s ease-in-out forwards;
+}
+
+@media (max-height:300px) {
+    .com-egt-jackpot-html-jackpotBanner-container {
+        margin: auto;
+        padding-top: 110px;
+        max-width: unset;
+    }
+
+    .egt-jackpot-game-name {
+        max-width: 490px;
+        -webkit-animation: moveMdLgGameName 1.3s ease-in-out forwards;
+                animation: moveMdLgGameName 1.3s ease-in-out forwards;
+    }
+
+    .egt-jackpot-left,
+    .egt-jackpot-right {
+        visibility: visible;
+        display: block;
+    }
+}
+
+@media (max-height:230px) {
+    .com-egt-jackpot-html-jackpotBanner-container {
+        padding-top: 165px;
+    }
+
+    .egt-jackpot-left,
+    .egt-jackpot-right {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@-webkit-keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes moveSmGameName {
+    from {
+        top: -100px;
+    }
+
+    to {
+        top: 5vw;
+    }
+}
+
+@keyframes moveSmGameName {
+    from {
+        top: -100px;
+    }
+
+    to {
+        top: 5vw;
+    }
+}
+
+@-webkit-keyframes moveMdLgGameName {
+    from {
+        top: -100px;
+    }
+
+    to {
+        top: 3vh;
+    }
+}
+
+@keyframes moveMdLgGameName {
+    from {
+        top: -100px;
+    }
+
+    to {
+        top: 3vh;
+    }
+}
+
+@-webkit-keyframes moveMdLgLeft {
+    from {
+        left: -200px;
+    }
+
+    to {
+        left: -50px;
+    }
+}
+
+@keyframes moveMdLgLeft {
+    from {
+        left: -200px;
+    }
+
+    to {
+        left: -50px;
+    }
+}
+
+@-webkit-keyframes moveMdLgRight {
+    from {
+        right: -200px;
+    }
+
+    to {
+        right: -50px;
+    }
+}
+
+@keyframes moveMdLgRight {
+    from {
+        right: -200px;
+    }
+
+    to {
+        right: -50px;
+    }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Jackpot Banner</title>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <link
+            href="/3rd-party-assets/egt-jackpot-banner/css/com-egt-jackpot-styles.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="/3rd-party-assets/egt-jackpot-banner/css/com-egt-jackpot-styles--ngit-override.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="/3rd-party-assets/egt-jackpot-banner/css/com-egt-jackpot--ngit-background.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+                    <link
+                href="/3rd-party-assets/egt-jackpot-banner/css/com-egt-jackpot-styles--ngit-override--novosti.css"
+                rel="stylesheet"
+                type="text/css"
+            />
+            <link
+                href="/3rd-party-assets/egt-jackpot-banner/css/com-egt-jackpot--ngit-background--novosti.css"
+                rel="stylesheet"
+                type="text/css"
+            />
+                <link
+            href="/3rd-party-assets/egt-jackpot-banner/css/com-egt-jackpot--ngit-sizing--novosti.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="/3rd-party-assets/egt-jackpot-banner/img/banner-royal-secrets/banner-style.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+    </head>
+    <body>
+    <!--
+    <div style="position:absolute; top:200px; width:100%; height:70px;" >
+    -->
+        <div class="com-egt-jackpot-html-jackpotBanner-container">
+            <div class="egt-jackpot-game-name"></div>
+            <div class="egt-jackpot-left"></div>
+            <div class="egt-jackpot-right"></div>
+            <div id="com-egt-jackpot-html-jackpotBanner"></div>
+        </div>
+        <script src="/3rd-party-assets/egt-jackpot-banner/js/jquery/1.11.2/jquery.min.js"></script>
+        <script
+            type="text/javascript"
+            src="/3rd-party-assets/egt-jackpot-banner/js/com-egt-jackpot-utilities.js"
+        ></script>
+        <script type="text/javascript">
+            var parentPage = document.location.search.split("=")[1];
+
+            var bannerConfig = {
+                URL: "./json-feed/", // Example : https://yourdomain.com/egt_parse.php
+                lang: "hr",
+                resourceURL: "/3rd-party-assets/egt-jackpot-banner", // If rescources are in different folder than this structre this must be set
+                redirectURL: null, // Url that will redirect to on title/logo clicked - NULL znači da link nije aktivan
+                maxDigits: [6, 7, 8, 9], // the maximun amount of didits that will be shown on each box for example : Clubs will show only 6 digits , Diamands Will show 7 digits et..
+                requestInterval: [5000, 5000, 15000, 30000, 60000, 180000], // Requests in MS  after 1880000 is reached each request will be send in that time
+                //NB!: Values Must be 5 !
+            };
+
+            switch (parentPage) {
+                case "e-igre":
+                    bannerConfig.xtra_small = 504; // vrijedi sve dok se ne aktivira @media (max-height:300px)
+                    // prikaz u 4 retka
+                    bannerConfig.small = 504; // "small" uopće ne koristimo/prikazujemo - zato ima istu vrijednost kao "xtra_small"
+                    // prikaz u 2 retka
+                    bannerConfig.medium = 970; // vrijedi sve dok se ne aktivira @media (max-height:230px)
+                    // prikaz u 1 retku
+                    bannerConfig.large = 1182; // vrijedi sve dok na ekranu nema dovoljno mjesta za "xtra_large" - ovo je pravilo se ne veže za CSS, već je responzivno
+                    break;
+                case "novosti":
+                    // prikaz u 4 retka
+                    bannerConfig.xtra_small = 527; // vrijedi sve dok se ne aktivira @media (max-height:225px)
+                    // prikaz u 4 retka
+                    bannerConfig.small = 527; // "small" uopće ne koristimo/prikazujemo - zato ima istu vrijednost kao "xtra_small"
+                    // prikaz u 2 retka
+                    bannerConfig.medium = 985; // vrijedi sve dok se ne aktivira @media (max-height:200px)
+                    // prikaz u 1 retku
+                    bannerConfig.large = 5000; // extra large niti ne želimo prikazati - zato ovako velika brojka
+                    break;
+            }
+
+            jackpot = new EgtJackpotComponent(bannerConfig);
+        </script>
+    </body>
+</html>

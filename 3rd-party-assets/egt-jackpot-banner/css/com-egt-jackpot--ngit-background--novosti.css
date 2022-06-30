@@ -1,0 +1,45 @@
+.com-egt-jackpot-html-jackpotBanner-container {
+    padding-top: 40px; /* mjesto za naslov */
+    background-size: auto;
+    background-position-x: center;
+    background-position-y: top;
+}
+
+.egt-jackpot-left,
+.egt-jackpot-right {
+    display: none;
+}
+
+.egt-jackpot-game-name {
+    -webkit-animation: none;
+            animation: none;
+    top: -15px;
+}
+
+
+@media (max-height:225px) {
+    .com-egt-jackpot-html-jackpotBanner-container {
+        padding-top: 21px; /* mjesto za naslov */
+    }
+    .egt-jackpot-game-name {
+        height: 65px;
+    }
+
+    .egt-jackpot-left,
+    .egt-jackpot-right {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-height:200px) {
+    .com-egt-jackpot-html-jackpotBanner-container {
+        padding-top: 122px; /* mjesto za naslov */
+    }
+}
+
+@media (max-height:299px) {
+    .egt-jackpot-game-name {
+        display: none;
+    }
+}

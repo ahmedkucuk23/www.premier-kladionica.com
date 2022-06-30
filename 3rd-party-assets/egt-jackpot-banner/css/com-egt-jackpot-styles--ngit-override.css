@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.com-egt-jackpot-html-jackpotBanner-container > #com-egt-jackpot-html-jackpotBanner {
+    margin: auto;
+}
+
+/* sakrivam ružan logo */
+#com-egt-jackpot-html-jackpotBanner.com-egt-jackpot-html-xsm .com-egt-jackpot-html-logo.com-egt-jackpot-html-mobile {
+    display: none;
+}
+
+/* sakrivam ružan logo */
+#com-egt-jackpot-html-jackpotBanner.com-egt-jackpot-html-lg .com-egt-jackpot-html-logo,
+#com-egt-jackpot-html-jackpotBanner.com-egt-jackpot-html-md .com-egt-jackpot-html-logo,
+#com-egt-jackpot-html-jackpotBanner.com-egt-jackpot-html-sm .com-egt-jackpot-html-logo,
+#com-egt-jackpot-html-jackpotBanner.com-egt-jackpot-html-xlg .com-egt-jackpot-html-logo,
+#com-egt-jackpot-html-jackpotBanner.com-egt-jackpot-html-xsm .com-egt-jackpot-html-logo {
+    visibility: hidden;
+}

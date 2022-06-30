@@ -1,0 +1,51 @@
+{
+    "name": "Sportska kladionica Premier",
+    "short_name": "Premier kladionica",
+    "icons": [
+        {
+            "src": "/img/favicons/production/apple-touch-icon-60x60.png",
+            "sizes": "60x60",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/favicons/production/apple-touch-icon-76x76.png",
+            "sizes": "76x76",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/favicons/production/apple-touch-icon-120x120.png",
+            "sizes": "120x120",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/favicons/production/apple-touch-icon-152x152.png",
+            "sizes": "152x152",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/favicons/production/apple-touch-icon-180x180.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/favicons/mockup/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/favicons/production/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/favicons/production/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/",
+    "scope": "/",
+    "theme_color": "#0A3F69",
+    "background_color": "#26639b",
+    "display": "standalone"
+}

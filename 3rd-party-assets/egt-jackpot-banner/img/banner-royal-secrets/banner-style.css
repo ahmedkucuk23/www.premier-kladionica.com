@@ -1,0 +1,38 @@
+.com-egt-jackpot-html-jackpotBanner-container {
+    background: url(sm/background.jpg) no-repeat center/cover;
+}
+.egt-jackpot-game-name {
+    background: url(sm/game-name.png) no-repeat center/contain;
+}
+.egt-jackpot-left {
+    background: url(md/left.png) no-repeat center/contain;
+    
+}
+.egt-jackpot-right {
+    background: url(md/right.png) no-repeat center/contain;
+}
+
+@media (max-height:300px) {
+    .com-egt-jackpot-html-jackpotBanner-container {
+        background: url(md/background.jpg) no-repeat center/cover;
+    }
+    .egt-jackpot-game-name {
+        background: url(md/game-name.png) no-repeat center/contain;
+    }
+}
+
+@media (max-height:230px) {
+    .com-egt-jackpot-html-jackpotBanner-container {
+        background: url(lg/background.jpg) no-repeat center/cover;
+    }
+    .egt-jackpot-game-name {
+        background: url(lg/game-name.png) no-repeat center/contain;
+    }
+    .egt-jackpot-left {
+        background: url(lg/left.png) no-repeat center/contain;
+        
+    }
+    .egt-jackpot-right {
+        background: url(lg/right.png) no-repeat center/contain;
+    }
+}

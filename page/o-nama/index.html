@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+<head>
+    <!-- 5.5.4 -->
+	<title>Premier Kladionica - O Nama</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../../css/reset.css" />
+            <link rel="stylesheet" type="text/css" href="../../css/style.css%3Fv=19d4a168715e232c8fff6978e160b525.css" />
+    	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Source+Sans+Pro:900&amp;subset=latin-ext" rel="stylesheet">
+	<script>
+        window.ngitsid=557638492; window.ngitguid='987593C6-FD64-4060-9583-73349F358478';
+    </script>
+	
+        <script src="../../3rd-party-scripts/raygun-entrypoint.js"></script>
+<script type="text/javascript">
+    rg4js('apiKey', 'ajfVjEXZscOf1h4434iwQ');
+    rg4js('enableCrashReporting', true);
+    rg4js('setVersion', '5.5.4');
+    rg4js('options', {
+        ignoreAjaxAbort: true,
+        ignoreAjaxError: true,
+        ignore3rdPartyErrors: true,
+    });
+</script>
+		    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-305909-16', 'auto');
+        ga('set', 'forceSSL', true);
+    </script>
+            <script>
+        (function() {
+            var errLog = [];
+            var reportMaxLen = 10;
+
+            const onError = function(ex) {
+                if(ex.error) {
+                    errLog.push({message:ex.error.message, stack:ex.error.stack});
+                }
+                if(ex.message === 'Script error.') {
+                    errLog.push({message:'external script error (CORS)'});
+                }
+                if(errLog.length>reportMaxLen) {
+                    errLog.splice(0, errLog.length-reportMaxLen);
+                }
+            };
+
+            window.addEventListener('error', onError);
+
+            window.ngitErrLogger = {
+                send: function() {
+                    fetch('/loading-error-report/', {
+                        method: 'POST', // *GET, POST, PUT, DELETE, etc.
+                        // mode: 'cors', // no-cors, *cors, same-origin
+                        cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+                        // credentials: 'same-origin', // include, *same-origin, omit
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        redirect: 'follow', // manual, *follow, error
+                        // referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+                        body: JSON.stringify({errLog:errLog})
+                    });
+                },
+                // slijedeću metodu poziva web app nakon što se uspije inicijalizirati
+                detach: function() {
+                    window.removeEventListener('error', onError);
+
+                    errLog = null;
+                    
+                    if(ngitErrLoggerTimeout) {
+                        window.clearTimeout(ngitErrLoggerTimeout);
+                    }
+
+                    delete window.ngitErrLoggerTimeout;
+                }
+            };
+
+            // ako se JavaScript nije pokrenuo unutar 10 sekundi pošalji error report
+            var ngitErrLoggerTimeout = window.setTimeout(window.ngitErrLogger.send, 10000);
+        })();
+    </script>
+	
+	    <script src="../../3rd-party-scripts/iframe-resizer-3.4.0.js"></script>
+	<script defer="defer" src="../../script/ngit-lib.a7acdd6924d24d06bdb5.bundle.js"></script><script defer="defer" src="../../script/vendor.f26ce8a139f75fdc6e69.bundle.js"></script><script defer="defer" src="../../script/app.6f50c2849e9e90dd9313.bundle.js"></script>    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+            <link rel="shortcut icon" type="image/png" href="../../img/favicons/production/favicon.ico"/>
+
+        <link rel="apple-touch-icon" href="../../img/favicons/production/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../../img/favicons/production/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../../img/favicons/production/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../../img/favicons/production/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicons/production/apple-touch-icon-180x180.png">
+
+        <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicons/production/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicons/production/favicon-16x16.png">
+        <link rel="manifest" href="../../site.webmanifest">
+        <link rel="mask-icon" href="../../img/favicons/production/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#26639b">
+        <meta name="theme-color" content="#0A3F69">
+</head>
+<body class="org-0">
+	<input type="radio" name="menu-toggle-radio-group" class="menu-toggle-radio-group" id="menu-toggle-radio__hide-all" checked>
+	<input type="radio" name="menu-toggle-radio-group" class="menu-toggle-radio-group" id="menu-toggle-radio__hide-all-anim">
+	<input type="radio" name="menu-toggle-radio-group" class="menu-toggle-radio-group" id="menu-toggle-radio__show-user-menu">
+	<input type="radio" name="menu-toggle-radio-group" class="menu-toggle-radio-group" id="menu-toggle-radio__show-login-form">
+	<input type="radio" name="menu-toggle-radio-group" class="menu-toggle-radio-group" id="menu-toggle-radio__show-site-nav">
+	<input type="radio" name="menu-toggle-radio-group" class="menu-toggle-radio-group" id="menu-toggle-radio__show-footer-menu">
+
+	<header class="page-header">
+		<label for="menu-toggle-radio__hide-all" class="page-header__hide-menu-overlay"></label>
+		<a href="../../index.html" class="page-header__logo"></a>
+				<nav class="page-header__quick-links noselect">
+			<a href="../../ponuda/index.html" class="page-header__quick-links__ponuda">Ponuda</a>
+			<a href="../../live/index.html" class="page-header__quick-links__live">Uživo</a>
+			<label for="menu-toggle-radio__show-login-form" class="page-header__prijava-show">Prijava</label>
+			<label for="menu-toggle-radio__hide-all" class="page-header__prijava-hide">Prijava</label>
+		</nav>
+						<div class="page-header__sat__container">
+    <div class="page-header__sat__skeleton">
+        <div class="page-header__sat noselect">
+			<p class="page-header__sat__sati-i-minute">--:--
+				<span class="page-header__sat__sekunde">:--</span>
+			</p>
+			<p class="page-header__sat__dan-u-tjednu"></p>
+			<p class="page-header__sat__datum"></p>
+		</div>
+    </div>
+</div>		<label class="page-header__hamburger noselect" for="menu-toggle-radio__show-site-nav" aria-label="Meni">
+			<div class="page-header__hamburger__icon-bar"></div>
+			<div class="page-header__hamburger__icon-bar"></div>
+			<div class="page-header__hamburger__icon-bar"></div>
+		</label>
+		<label class="page-header__hamburger-exit noselect" for="menu-toggle-radio__hide-all-anim" aria-label="Zatvori">
+			<div class="page-header__hamburger__icon-bar"></div>
+			<div class="page-header__hamburger__icon-bar"></div>
+			<div class="page-header__hamburger__icon-bar"></div>
+		</label>
+		<div class="page-header__clipping-container">
+						<nav class="page-header__site-nav noselect">
+				<ul class="page-header__menu__list">
+					<li>
+						<a href="../../index.html" title="Pregled novosti">Novosti</a>
+					</li>
+					<li>
+						<a href="../../ponuda/index.html" title="Pregled ponude i sastavljanje listića">Ponuda</a>
+					</li>
+					<li>
+						<a href="../../rezultati/index.html" title="Pregled rezultata prošlih događaja">Rezultati</a>
+					</li>
+					<li>
+						<a href="../../live/index.html" title="Klađenje uživo">Uživo</a>
+					</li>
+					<li data-master-sw="loto">
+						<a href="../../loto/index.html" title="Klađenje na loto izvlačenja">Loto</a>
+					</li>
+					<li data-master-sw="eIgre" ">
+						<a title="e-Igre" href="../../e-igre/index.html">e-Igre</a>
+					</li>
+					<li data-master-sw="liveCasino" ">
+						<a title="Live Casino" href="../../live-casino/index.html">Live Casino</a>
+					</li>
+					<li>
+						<a href="../../ttx/662/1/index.html" title="Pregled teleteksta" target="_blank" data-popup-cfg="height=377,width=646,channelmode=yes,status=no,titlebar=no,scrollbars=no,toolbar=no">TTX</a>
+					</li>
+				</ul>
+				<label class="page-header__icon-exit-menu" for="menu-toggle-radio__hide-all-anim" aria-label="Zatvori">
+					<img src="../../img/icons/up_double.svg" alt="Zatvori">
+				</label>
+			</nav>		</div>
+	</header>
+    <div id="topC">
+    <div id="centerC">
+		<div class="mod">
+            <div class="modC">
+                <div class="wp-page text-defaults">
+                        <ol itemscope itemtype="http://schema.org/BreadcrumbList" id="breadcrumbs">
+    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__list-item">
+        <a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="../../index.html" class="breadcrumbs__link">
+            <span itemprop="name">Početna</span>
+        </a>
+        <meta itemprop="position" content="1" />
+    </li>
+    <li class="breadcrumbs__list-item">›</li>
+    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__list-item">
+        <span itemscope itemtype="http://schema.org/Thing" itemprop="item" class="breadcrumbs__current-item">
+            <span temprop="name">O Nama</span>
+        </span>
+        <meta itemprop="position" content="2" />
+    </li>
+</ol>
+<p><img loading="lazy" class="wp-image-6368 size-full alignleft" src="../../wp-content/uploads/2016/03/icon-keys-inline.png" alt="" width="52" height="67" /><br />
+Da bi vidio sadržaj ove stranice moraš biti prijavljen.</p>
+
+                </div>
+            </div>
+        </div>        
+    </div>
+</div>
+		<div class="footer-menu noselect">
+		<label for="menu-toggle-radio__show-footer-menu" aria-label="Meni" class="footer-menu__otvori"><i class="material-icons">subtitles</i></label>
+		<div class="footer-menu__links">
+			<label for="menu-toggle-radio__hide-all" aria-label="Meni" class="footer-menu__zatvori"><i class="material-icons">subtitles</i></label>
+			<ul>
+				<li><a href="index.html" class="btnTxt">O nama</a></li>
+				<li><a href="../kontakt/index.html" class="btnTxt">Kontakt</a></li>
+				<li><a href="../poslovnice/index.html" class="btnTxt">Poslovnice</a></li>
+				<li><a href="../sms/index.html" class="btnTxt">SMS</a></li>
+				<li><a href="../pravila-igre-na-srecu/index.html" class="btnTxt">Pravila</a></li>
+				<li><a href="../../sistemi/index.html" class="btnTxt">Sistemi</a></li>
+				<li><a href="../../arhiva-listica/index.html" class="btnTxt">Arhiva listića</a></li>
+				<li><a href="../mobilna-aplikacija/index.html" class="btnTxt">Mobilna aplikacija</a></li>
+				<li><a href="https://pomoc.premier-kladionica.com/" class="btnTxt" target="_blank">Pomoć</a></li>
+				<li class="footer-menu__zabrana-kladjenja"><a href="index.html" class="btnTxt">Zabranjeno klađenje mlađima od 18 godina</a></li>
+			</ul>
+		</div>
+	</div>	<!-- Midas Pixel Code -->
+<img height="1" width="1" style="display:none" src="https://cdn.midas-network.com/MidasPixel/IndexAsync/eea5bee9-74d9-49f1-a672-7c5418cca002" />
+<!-- DO NOT MODIFY -->
+<!-- End Midas Pixel Code --></body>
+</html>
